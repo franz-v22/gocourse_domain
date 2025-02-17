@@ -22,5 +22,6 @@ func (c *Course) BeforeCreate(tx *gorm.DB) (err error) {
 	if c.ID == "" {
 		c.ID = uuid.New().String()
 	}
+
 	return
 }
